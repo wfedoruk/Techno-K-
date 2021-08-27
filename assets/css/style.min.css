@@ -445,7 +445,7 @@ a {
   color: #FEBA03; }
 
 .arrow_nav {
-  content: url(/assets/images/arrow_right.png);
+  content: url(../images/arrow_right.png);
   position: relative;
   width: 6px;
   height: 10px;
@@ -454,7 +454,7 @@ a {
   background-color: transparent; }
 
 .sidebar_navigation li:hover .arrow_nav {
-  content: url(/assets/images/arrow_gold.png); }
+  content: url(../images/arrow_gold.png); }
 
 .sidebar_nav a {
   cursor: pointer; }
@@ -748,7 +748,7 @@ nav a:hover {
       height: auto; } }
 
 .banner_block:before {
-  background: url(/assets/images/start_logo.png) no-repeat scroll 0 0 transparent;
+  background: url("/assets/images/start_logo.png") no-repeat scroll 0 0 transparent;
   opacity: 0.3;
   position: absolute;
   top: 0;
@@ -934,12 +934,12 @@ input {
   border: none; }
 
 .arrow_right {
-  content: url(/assets/images/arrow_right.png);
+  content: url("/assets/images/arrow_right.png");
   width: 8px;
   height: 11px; }
 
 .arrow_left {
-  content: url(/assets/images/arrow_left.png);
+  content: url("/assets/images/arrow_left.png");
   width: 8px;
   height: 11px; }
 
@@ -1538,22 +1538,22 @@ footer {
   border: none; }
 
 .img_vk {
-  background-image: url(/assets/images/footer/vk.png); }
+  background-image: url(../images/footer/vk.png); }
 
 .img_vk:hover {
-  background-image: url(/assets/images/footer/vk_hover.png); }
+  background-image: url(../images/footer/vk_hover.png); }
 
 .img_inst {
-  background-image: url(/assets/images/footer/inst.png); }
+  background-image: url(../images/footer/inst.png); }
 
 .img_inst:hover {
-  background-image: url(/assets/images/footer/inst_hover.png); }
+  background-image: url(../images/footer/inst_hover.png); }
 
 .img_fb {
-  background-image: url(/assets/images/footer/fb.png); }
+  background-image: url(../images/footer/fb.png); }
 
 .img_fb:hover {
-  background-image: url(/assets/images/footer/fb_hover.png); }
+  background-image: url(../images/footer/fb_hover.png); }
 
 .footer_policy {
   height: 8.8rem;
