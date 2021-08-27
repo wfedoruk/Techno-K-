@@ -748,7 +748,7 @@ nav a:hover {
       height: auto; } }
 
 .banner_block:before {
-  background: url("/assets/images/start_logo.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/start_logo.png") no-repeat scroll 0 0 transparent;
   opacity: 0.3;
   position: absolute;
   top: 0;
@@ -934,12 +934,12 @@ input {
   border: none; }
 
 .arrow_right {
-  content: url("/assets/images/arrow_right.png");
+  content: url("../images/arrow_right.png");
   width: 8px;
   height: 11px; }
 
 .arrow_left {
-  content: url("/assets/images/arrow_left.png");
+  content: url("../images/arrow_left.png");
   width: 8px;
   height: 11px; }
 
