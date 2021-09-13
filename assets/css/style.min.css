@@ -325,23 +325,35 @@ textarea {
   padding: 0.2em 0; }
 
 html {
-  font-size: 12px;
+  font-size: 13.3px;
   font-family: "Futura PT Book"; }
   @media (max-width: 1920px) {
     html {
       font-size: 10px; } }
   @media (max-width: 1681px) {
     html {
-      font-size: 9px; } }
+      font-size: 8.75px; } }
   @media (max-width: 1441px) {
     html {
-      font-size: 8px; } }
+      font-size: 7.5px; } }
   @media (max-width: 1281px) {
     html {
-      font-size: 7px; } }
+      font-size: 6.6px; } }
   @media (max-width: 1025px) {
     html {
       font-size: 6px; } }
+  @media (max-width: 768px) {
+    html {
+      font-size: 4.5px; } }
+  @media (max-width: 601px) {
+    html {
+      font-size: 3.5px; } }
+  @media (max-width: 481px) {
+    html {
+      font-size: 4.5px; } }
+  @media (max-width: 321px) {
+    html {
+      font-size: 4px; } }
 
 body {
   background-color: #fff; }
@@ -396,7 +408,7 @@ a:hover {
   @media (max-width: 1025px) {
     .sidebar {
       width: 100%;
-      height: 80px; } }
+      height: 13.5rem; } }
 
 .sidebar_header {
   min-height: calc(100vh - 15rem);
@@ -405,14 +417,15 @@ a:hover {
     .sidebar_header {
       margin: 0;
       padding: 5rem 0;
-      height: auto; } }
+      min-height: 5rem; } }
 
 .sidebar_header img {
   width: 12.3rem;
   margin-left: 3.8rem; }
   @media (max-width: 1025px) {
     .sidebar_header img {
-      margin-left: 8.2rem; } }
+      margin-left: 8.2rem;
+      width: 20rem; } }
 
 .nav {
   font-size: 2rem;
@@ -453,21 +466,24 @@ a:hover {
   cursor: pointer; }
 
 .sidebar_navigation > li .sidebar_nav {
-  padding-bottom: 5px;
-  border-bottom: 1px solid transparent; }
+  padding-bottom: .5rem;
+  border-bottom: .1rem solid transparent; }
 
 .sidebar_navigation li:hover .sidebar_nav {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #FEBA03;
+  border-bottom: 0.1rem solid #FEBA03;
   transition: 1s; }
 
 .union img {
-  width: 64px;
-  height: 18px; }
+  width: 6.4rem;
+  height: 1.8rem; }
 
 .clicked {
   background: #FEBA03;
   box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3); }
+
+.clicked:hover {
+  background: #000;
+  transition: 1.5s; }
 
 .sidebar_footer {
   display: block;
@@ -502,8 +518,8 @@ a:hover {
 
 .nav_inner h2 {
   display: block;
-  padding-top: 5.5rem;
-  font-size: 1.8rem;
+  padding-top: 7rem;
+  font-size: 2rem;
   color: #FEBA03;
   line-height: 3.8rem; }
 
@@ -515,8 +531,8 @@ a:hover {
   line-height: 3rem; }
 
 .menu_button {
-  width: 20px;
-  padding: 10px 0;
+  width: 3.5rem;
+  padding: 2rem 0;
   cursor: pointer;
   border: 0;
   display: none;
@@ -529,18 +545,18 @@ a:hover {
 .menu_item, .menu_item:before, .menu_item:after {
   content: "";
   display: block;
-  width: 20px;
-  height: 1px;
+  width: 3.5rem;
+  height: .2rem;
   background: #FEBA03;
   position: relative;
   right: 0;
   z-index: 100; }
 
 .menu_item:before {
-  top: 5px; }
+  top: .9rem; }
 
 .menu_item:after {
-  bottom: 6px; }
+  bottom: 1.1rem; }
 
 .nav_show {
   display: none;
@@ -563,7 +579,7 @@ a:hover {
   margin-top: 4rem;
   margin-left: 65rem;
   width: 10.3rem;
-  height: 2rem;
+  height: 3rem;
   border: none;
   background-color: transparent;
   font-size: 1.8rem;
@@ -619,6 +635,9 @@ main {
   display: flex;
   justify-content: space-between;
   height: 2rem; }
+  @media (max-width: 1025px) {
+    .nav_base {
+      margin-top: 18rem; } }
 
 .nav_base a {
   font-family: "Futura PT Demi";
@@ -628,6 +647,9 @@ main {
   color: #fff;
   text-decoration: none;
   padding-left: 3rem; }
+  @media (max-width: 1025px) {
+    .nav_base a {
+      font-size: 2.6rem; } }
 
 nav a:hover {
   color: #FEBA03;
@@ -642,7 +664,7 @@ nav a:hover {
   position: relative; }
   @media (max-width: 1025px) {
     .start_block {
-      height: 560px; } }
+      height: 100rem; } }
 
 .offer_block {
   width: 50rem;
@@ -654,23 +676,23 @@ nav a:hover {
   @media (max-width: 1025px) {
     .offer_block {
       width: 100%;
-      height: 220px;
+      height: 22rem;
       position: absolute;
       left: 0;
-      bottom: -220px;
+      bottom: -22rem;
       padding: 0;
-      min-height: 220px; } }
+      min-height: 22rem; } }
 
 .offer_block_inner {
   background-color: #FEBA03; }
   @media (max-width: 1025px) {
     .offer_block_inner {
       display: flex;
-      margin: 0;
-      margin-top: 3.8rem; } }
+      margin: 0; } }
 
 .offer_block_inner h3 {
-  padding-bottom: 2rem;
+  padding-top: 6.35rem;
+  padding-bottom: 3.35rem;
   text-align: left;
   color: #000; }
   @media (max-width: 1025px) {
@@ -678,22 +700,19 @@ nav a:hover {
       text-align: center;
       font-size: 4rem;
       line-height: 5rem;
-      text-decoration-line: underline;
-      padding-top: 3.8rem;
-      padding-bottom: 0; } }
+      text-decoration-line: underline; } }
 
 .offer_block_inner p {
   font-size: 1.8rem;
   line-height: 2.3rem;
   color: #fff;
-  padding-bottom: 8rem; }
+  padding-bottom: 5.5rem; }
   @media (max-width: 1025px) {
     .offer_block_inner p {
       text-align: center;
-      font-size: 16px;
-      line-height: 23px;
-      margin: 0 1rem;
-      padding: 3.8rem 4rem 0; } }
+      font-size: 2.65rem;
+      line-height: 3.8rem;
+      padding: 0 4.5rem 8rem; } }
 
 .banner_block {
   margin-left: 20rem;
@@ -703,25 +722,28 @@ nav a:hover {
   @media (max-width: 1025px) {
     .banner_block {
       margin-left: 0;
-      margin-top: 80px;
+      margin-top: 8rem;
       width: 100%;
-      height: 100rem; } }
+      height: 110rem; } }
 
 .banner_block_image {
   float: right;
   overflow: hidden; }
 
+.banner_block_image_cover {
+  background: #1B1B1B;
+  opacity: .3; }
+
 .banner_block_image img {
   width: 100%;
   height: 100vh;
   top: 0;
-  opacity: .7;
   margin-left: auto;
   object-fit: cover; }
 
 .banner_block_inner {
   height: 100rem;
-  padding: 36rem 11rem 0 0;
+  padding: 25rem 11rem 0 0;
   position: absolute;
   top: 0;
   right: 0; }
@@ -787,6 +809,9 @@ nav a:hover {
   text-align: right;
   font-size: 1.3rem;
   margin-top: 1rem; }
+  @media (max-width: 1025px) {
+    .form_subtext {
+      font-size: 2.1rem; } }
 
 .start_block_bottom {
   display: flex;
@@ -917,7 +942,7 @@ input {
   line-height: 5rem; }
   @media (max-width: 1025px) {
     .about_company {
-      margin-top: 300px; } }
+      margin-top: 42rem; } }
 
 .about_company_inner {
   display: flex;
@@ -937,13 +962,10 @@ input {
   box-shadow: 0.5rem 0px 3rem rgba(0, 0, 0, 0.1);
   transition: 1.5s; }
 
-.about_company :hover > .block_to_move {
-  margin-left: 7rem; }
-
 .about_company_image {
   width: 15rem;
   height: 15rem;
-  background-color: #000;
+  background-color: #1C0B05;
   position: relative;
   flex-shrink: 0; }
 
@@ -992,12 +1014,8 @@ input {
     .serv_arrows {
       margin-top: -8rem; } }
 
-.serv_arrows .arrows:last-child {
-  background: #FEBA03;
-  opacity: 1; }
-
 .serv_arrows .arrows:hover {
-  background: #E04A38;
+  background: #FEBA03;
   opacity: 1;
   transition: 1s; }
 
@@ -1102,22 +1120,28 @@ input {
 
 .loans {
   color: #000;
-  margin: 0 9.5rem; }
+  margin: 0 11rem; }
 
 .loans_header {
-  margin: 5rem 0; }
+  padding: 5rem 0; }
 
 .loans_block {
-  display: flex;
-  margin-bottom: 4rem; }
+  margin-bottom: 4.5rem; }
 
 .loans_block_image {
-  display: block;
-  width: 52%;
+  display: inline-block;
+  width: 74rem;
+  height: 54rem;
   position: relative;
-  margin: 0 2.5rem;
+  margin-right: 5rem;
   overflow: hidden;
-  text-align: -webkit-center; }
+  text-align: -webkit-center;
+  vertical-align: middle; }
+
+.loans_block_image:nth-child(2n) {
+  right: 0;
+  margin-right: 0;
+  margin-left: 5rem; }
 
 .loans_block_image img {
   width: 100%;
@@ -1149,8 +1173,9 @@ input {
   transform: translate3d(-50%, -50%, 0); }
 
 .loans_block_text {
-  width: 48%;
-  padding: 7rem 2.5rem 0; }
+  display: inline-block;
+  width: 64rem;
+  vertical-align: middle; }
 
 .loans_date {
   margin-bottom: 4rem;
@@ -1165,6 +1190,12 @@ input {
   line-height: 3.1rem;
   color: #1C0B05;
   position: relative; }
+
+.loans_heading:first-letter {
+  text-transform: uppercase; }
+
+.loans_heading h4 {
+  text-transform: lowercase; }
 
 .loans_heading:after {
   display: block;
@@ -1204,8 +1235,8 @@ input {
   display: block;
   margin: 0 25rem 4rem;
   text-align: center;
-  font-size: 18px;
-  line-height: 23px; }
+  font-size: 1.8rem;
+  line-height: 2.3rem; }
 
 .company_button {
   padding-bottom: 10rem; }
@@ -1213,6 +1244,7 @@ input {
 .company_button button {
   display: block;
   margin: 0 auto;
+  color: #fff;
   background-color: #E04A38; }
 
 .company_button button:hover {
@@ -1238,12 +1270,8 @@ input {
     .clients_arrows {
       margin-top: -8rem; } }
 
-.clients_arrows .arrows:last-child {
-  background: #FEBA03;
-  opacity: 1; }
-
 .clients_arrows .arrows:hover {
-  background: #E04A38;
+  background: #FEBA03;
   opacity: 1; }
 
 .clients_inner {
@@ -1311,7 +1339,8 @@ input {
   display: inline-flex; }
 
 .stars img {
-  padding-left: 1rem; }
+  padding-left: 1rem;
+  height: 1rem; }
 
 footer {
   position: relative;
