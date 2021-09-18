@@ -152,7 +152,7 @@
                      
                         <div class="banner_block_inner">
                             <div class="heading">
-                                <!-- <h1 class="display_">масштабируем <br> ваши возможности</h1> -->
+                                <h1 class="display_">масштабируем <br> ваши возможности</h1>
                                 <h1 class="display_none">масштабируем ваши возможности</h1>
                             </div>
                             <div class="form_inner">
@@ -173,7 +173,9 @@
                                         <input  class="submit_input" type="submit" value="Оставить заявку">
                                     </div>
                                 </form>
-                                <div class="form_subtext">Отправляя форму, Вы соглашаетесь на политику обработки персональных данных.</div>
+                                <div class="form_subtext">
+                                    <p> Отправляя форму, Вы соглашаетесь на политику обработки персональных данных.</p>
+                                </div>
                             </div>
                                 
                         </div>   
@@ -448,8 +450,8 @@
                         </div>
                        
                     </div>
-                    <div class="sliders_controls">
-                        <div class="loans_dots dots_inner" id="carousel1"></div>
+                    <div class="sliders_controls_mobile">
+                        <div class="loans_dots"></div>
                     </div>
                 </div><!-- loans -->
                 <div class="company">
@@ -475,8 +477,6 @@
                                 <span class="arrow_right"></span>
                             </button>
                         </div> 
-                        
-                        
                     </div>
                     
                     
@@ -604,7 +604,10 @@
                                 </div>
                             </div> 
                                         
-                            </div>
+                        </div>
+                        <div class="sliders_controls_mobile">
+                            <div class="clients_dots_mobile"></div>
+                        </div>
                 
                     </div>   
                 </div>
@@ -621,8 +624,18 @@
                                 </ul>
                             </div>
                             <div class="footer_logo">
-                                <img src="assets/images/footer/logo.png" alt="">
+                                <div class="footer_logo_wrapper">
+                                    <img src="assets/images/footer/logo.png" alt="">
+                                </div>
+                                
                                 <div class="footer_social">
+                                    <div class="footer_policy_logo display_none">
+                                        <a class="year" href="">
+                                            <script>
+                                                document.write("Tehno.K "+ new Date().getFullYear()+ " (c) ");
+                                            </script>
+                                        </a>
+                                    </div>
                                     <a href=""><span class="img_vk" ></a>
                                     <a href=""><span class="img_inst"></a>
                                     <a href=""><span class="img_fb" ></a>
@@ -673,20 +686,20 @@
                                     <li><a href="">Подбор персонала</a></li>
                                 </ul>
                             </div>
-                         </div>
+                        </div>
                     </div>    
                     
-                    </div><!-- footer_inner -->
+                    <!-- footer_inner -->
                     <div class="footer_policy">
-                        <div>
+                        <div class="footer_policy_logo display">
                             <a class="year" href="">
                                 <script>
                                     document.write("Tehno.K "+ new Date().getFullYear()+ " (c) ");
                                 </script>
                             </a>
                         </div>
-                        <div><a href="">Политика конфиденциальности</a></div>
-                        <div><a href="">Разработка и поддержка SHEEP.FISH</a></div>
+                        <div class="footer_policy_text"><a href="">Политика конфиденциальности</a></div>
+                        <div class="footer_policy_dev"><a href="">Разработка и поддержка SHEEP.FISH</a></div>
                     </div>
                 </footer>
             </div> 
