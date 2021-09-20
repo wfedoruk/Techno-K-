@@ -938,7 +938,7 @@ nav a:hover {
       height: 110rem; } }
   @media (max-width: 767px) {
     .banner_block {
-      min-height: calc(100vh - 212px);
+      min-height: calc(100vh - 172px);
       margin-top: 80px; } }
   @media (max-width: 426px) {
     .banner_block {
