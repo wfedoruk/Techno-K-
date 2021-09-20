@@ -462,7 +462,7 @@ a:hover {
 @media (max-width: 426px) {
   .sidebar_body {
     width: 100%;
-    height: auto; } }
+    min-height: calc(100vh - 82px); } }
 
 .nav {
   min-height: calc(100vh - 20rem);
@@ -604,7 +604,7 @@ a:hover {
   @media (max-width: 767px) {
     .nav_inner {
       display: block;
-      height: 480px;
+      max-height: calc(100vh - 82px);
       overflow-x: hidden;
       overflow-y: auto; } }
 
@@ -938,7 +938,11 @@ nav a:hover {
       height: 110rem; } }
   @media (max-width: 767px) {
     .banner_block {
-      height: 400px;
+      min-height: calc(100vh - 172px);
+      margin-top: 80px; } }
+  @media (max-width: 426px) {
+    .banner_block {
+      max-height: calc(100vh - 172px);
       margin-top: 80px; } }
 
 .banner_block_image {
@@ -962,7 +966,7 @@ nav a:hover {
     .banner_block_image img {
       position: relative;
       width: 508px;
-      height: 405px;
+      min-height: calc(100vh);
       left: -80px; } }
 
 .banner_block_inner {
@@ -978,6 +982,7 @@ nav a:hover {
     .banner_block_inner {
       display: block;
       width: 100%;
+      height: auto;
       margin-right: 0;
       padding-top: 20px;
       padding-right: 0; } }
