@@ -973,8 +973,9 @@ nav a:hover {
   height: 100rem;
   padding: 25rem 11rem 0 0;
   position: absolute;
-  top: 0;
-  right: 0; }
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%); }
   @media (max-width: 1025px) {
     .banner_block_inner {
       padding-top: 25rem; } }
@@ -984,7 +985,7 @@ nav a:hover {
       width: 100%;
       height: auto;
       margin-right: 0;
-      padding-top: 20px;
+      padding-top: 0;
       padding-right: 0; } }
 
 .heading {
