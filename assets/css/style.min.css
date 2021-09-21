@@ -462,7 +462,7 @@ a:hover {
 @media (max-width: 426px) {
   .sidebar_body {
     width: 100%;
-    min-height: calc(100vh - 122px); } }
+    min-height: calc(100vh - 172px); } }
 
 .nav {
   min-height: calc(100vh - 20rem);
@@ -604,7 +604,7 @@ a:hover {
   @media (max-width: 767px) {
     .nav_inner {
       display: block;
-      max-height: calc(100vh - 122px);
+      max-height: calc(100vh - 82px);
       overflow-x: hidden;
       overflow-y: auto; } }
 
@@ -1080,13 +1080,16 @@ nav a:hover {
       font-size: 2.1rem; } }
   @media (max-width: 767px) {
     .form_subtext {
-      width: 261px;
+      width: 262px;
       text-align: center;
       font-size: 12px;
       line-height: 15px;
       font-family: "Futura PT Bold";
       padding-top: 10px;
       margin: 0 auto; } }
+  @media (max-width: 426px) {
+    .form_subtext {
+      padding-top: 5px; } }
 
 .sliders_controls_separate {
   position: absolute;

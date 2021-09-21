@@ -488,7 +488,7 @@ a:hover {
 
 @media (max-width: 767px) {
     .sidebar {
-        height: 80px;
+        height: 81px;
     }
 }
 
@@ -545,6 +545,13 @@ a:hover {
     .sidebar_body {
         width: 100%;
         height: auto;
+    }
+}
+
+@media (max-width: 426px) {
+    .sidebar_body {
+        width: 100%;
+        min-height: calc(100vh - 172px);
     }
 }
 
@@ -742,9 +749,15 @@ a:hover {
 @media (max-width: 767px) {
     .nav_inner {
         display: block;
-        height: 480px;
-        overflow: hidden;
+        max-height: calc(100vh - 172px);
+        overflow-x: hidden;
+        overflow-y: auto;
     }
+}
+
+.nav_inner_scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 @media (max-width: 767px) {
@@ -789,7 +802,7 @@ a:hover {
     .nav_left, .nav_right {
         width: auto;
         line-height: 6rem;
-        margin: 0 10rem;
+        margin: 0 30px;
     }
 }
 
@@ -833,9 +846,11 @@ a:hover {
     }
 }
 
-.menu_button.active .menu_item {
-    background: none;
-    border: 0;
+@media (max-width: 767px) {
+    .menu_button.active .menu_item {
+        background: none;
+        border: 0;
+    }
 }
 
 .menu_item:before {
@@ -858,26 +873,30 @@ a:hover {
     }
 }
 
-.menu_button.active .menu_item:before {
-    -webkit-transform-origin: left top;
-    transform-origin: left top;
-    -webkit-transform: rotate(-45deg) translateX(-3.5px);
-    transform: rotate(-45deg) translateX(-3.5px);
-    transition: -webkit-transform .2s linear;
-    transition: transform .2s linear;
-    transition: transform .2s linear, -webkit-transform .2s linear;
-    height: 1.2px;
+@media (max-width: 767px) {
+    .menu_button.active .menu_item:before {
+        -webkit-transform-origin: left top;
+        transform-origin: left top;
+        -webkit-transform: rotate(-45deg) translateX(-3.5px);
+        transform: rotate(-45deg) translateX(-3.5px);
+        transition: -webkit-transform .2s linear;
+        transition: transform .2s linear;
+        transition: transform .2s linear, -webkit-transform .2s linear;
+        height: 1.2px;
+    }
 }
 
-.menu_button.active .menu_item:after {
-    -webkit-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: rotate(45deg) translateX(-3px);
-    transform: rotate(45deg) translateX(-3px);
-    transition: -webkit-transform .2s linear;
-    transition: transform .2s linear;
-    transition: transform .2s linear, -webkit-transform .2s linear;
-    height: 1.2px;
+@media (max-width: 767px) {
+    .menu_button.active .menu_item:after {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: rotate(45deg) translateX(-3px);
+        transform: rotate(45deg) translateX(-3px);
+        transition: -webkit-transform .2s linear;
+        transition: transform .2s linear;
+        transition: transform .2s linear, -webkit-transform .2s linear;
+        height: 1.2px;
+    }
 }
 
 .nav_show {
@@ -905,7 +924,7 @@ a:hover {
     .nav_show {
         height: auto;
         left: 0;
-        top: 80px;
+        top: 82px;
     }
 }
 
@@ -978,17 +997,19 @@ a:hover {
 }
 
 .nav_inner_arrow {
-    content: url(../images/nav_inner_arrow.svg);
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    width: 21.50px;
-    height: 1px;
-    margin-bottom: .1rem;
-    background-color: #FEBA03;
-    box-sizing: border-box;
-    -webkit-transform: rotate(91.91deg);
-    transform: rotate(91.91deg);
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .nav_inner_arrow {
+        display: block;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 10px;
+        height: 20.5px;
+        cursor: pointer;
+    }
 }
 
 main {
@@ -1214,7 +1235,14 @@ nav a:hover {
 
 @media (max-width: 767px) {
     .banner_block {
-        height: 400px;
+        min-height: calc(100vh - 172px);
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 426px) {
+    .banner_block {
+        max-height: calc(100vh - 172px);
         margin-top: 80px;
     }
 }
@@ -1248,7 +1276,7 @@ nav a:hover {
     .banner_block_image img {
         position: relative;
         width: 508px;
-        height: 405px;
+        min-height: calc(100vh);
         left: -80px;
     }
 }
@@ -1257,8 +1285,10 @@ nav a:hover {
     height: 100rem;
     padding: 25rem 11rem 0 0;
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 @media (max-width: 1025px) {
@@ -1271,8 +1301,9 @@ nav a:hover {
     .banner_block_inner {
         display: block;
         width: 100%;
+        height: auto;
         margin-right: 0;
-        padding-top: 20px;
+        padding-top: 0;
         padding-right: 0;
     }
 }
@@ -1630,6 +1661,7 @@ input {
 
 .about_company {
     margin: 0 auto;
+    top: -5rem;
     color: #000;
     line-height: 5rem;
 }
@@ -1642,6 +1674,8 @@ input {
 
 @media (max-width: 767px) {
     .about_company {
+        position: relative;
+        top: -32px;
         margin: 0 10px;
         background-color: #F8FAFC;
     }
